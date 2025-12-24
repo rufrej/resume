@@ -1,0 +1,151 @@
+.about-section {
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ padding: 6rem 2rem 4rem;
+ background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+ transition: background 0.5s ease;
+ /* background-image: url('../public/mountain-1.png'); */
+}
+
+.dark .about-section {
+ background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+ /* background-image: url('../public/mountain-1.png'); */
+}
+
+.about-container {
+ max-width: 1280px;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 4rem;
+ align-items: center;
+}
+
+.about-content {
+ display: flex;
+ flex-direction: column;
+ animation: fadeInUp 0.6s ease forwards;
+}
+
+.about-title {
+ display: block;
+ max-width: fit-content;
+ font-size: 3rem;
+ font-weight: 700;
+ color: #111827;
+ margin-bottom: 0.5rem;
+ padding: 0.2rem;
+ line-height: 1.2;
+ letter-spacing: 0.1em;
+ overflow: hidden;
+ white-space: nowrap;
+ border-right: 0.15em solid white;
+}
+
+.dark .about-title {
+ color: #f9fafb;
+}
+
+.highlight {
+ background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+}
+
+.about-subtitle {
+ font-size: 1.5rem;
+ font-weight: 500;
+ color: #3b82f6;
+ margin-bottom: 2rem;
+}
+
+.about-text {
+ font-size: 1.125rem;
+ line-height: 1.8;
+ color: #4b5563;
+ margin-bottom: 1.5rem;
+}
+
+.dark .about-text {
+ color: #d1d5db;
+}
+
+.about-image {
+ animation: fadeInUp 1s ease forwards;
+}
+
+.image-placeholder {
+ position: relative;
+ width: 100%;
+ max-width: 400px;
+ aspect-ratio: 1;
+ margin: 0 auto;
+ border-radius: 2rem;
+ overflow: hidden;
+ box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* .image-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  border-radius: 2rem;
+  z-index: -1;
+} */
+
+.profile-image {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ display: block;
+}
+
+@media (max-width: 1024px) {
+ .about-container {
+  grid-template-columns: 1fr;
+  gap: 3rem;
+ }
+
+ .about-content,
+ .about-image {
+  transform: translateY(30px);
+ }
+
+ .about-content.visible,
+ .about-image.visible {
+  transform: translateY(0);
+ }
+
+ .about-title {
+  font-size: 2.5rem;
+ }
+
+ .image-placeholder {
+  max-width: 350px;
+ }
+}
+
+@media (max-width: 640px) {
+ .about-section {
+  padding: 5rem 1rem 3rem;
+ }
+
+ .about-title {
+  font-size: 2rem;
+ }
+
+ .about-subtitle {
+  font-size: 1.25rem;
+ }
+
+ .about-text {
+  font-size: 1rem;
+ }
+
+ .image-placeholder {
+  max-width: 300px;
+ }
+}

@@ -1,0 +1,158 @@
+.skills-section {
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ padding: 6rem 2rem;
+ background-color: #ffffff;
+ transition: background-color 0.3s ease;
+}
+
+.dark .skills-section {
+ background-color: #111827;
+}
+
+.skills-container {
+ max-width: 1280px;
+ margin: 0 auto;
+ width: 100%;
+}
+
+.skills-title {
+ font-size: 2.5rem;
+ font-weight: 700;
+ text-align: center;
+ color: #111827;
+ margin-bottom: 1rem;
+}
+
+.dark .skills-title {
+ color: #f9fafb;
+}
+
+.skills-subtitle {
+ font-size: 1.125rem;
+ text-align: center;
+ color: #6b7280;
+ margin-bottom: 4rem;
+}
+
+.dark .skills-subtitle {
+ color: #9ca3af;
+}
+
+.skills-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ gap: 3rem;
+ justify-content: center;
+ /* display: flex;
+ flex-wrap: wrap; */
+ max-width: 1100px;
+ margin: 0 auto;
+}
+
+.skill-card {
+ max-width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 1rem;
+ background-color: #ffffff;
+ border-radius: 1rem;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+ transition: all 0.3s ease;
+ opacity: 0;
+ animation: fadeInUp 0.6s ease forwards;
+}
+
+.dark .skill-card {
+ background-color: #1f2937;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card:hover {
+ transform: translateY(-8px);
+ box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.dark .skill-card:hover {
+ box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.skill-icon {
+ /* min-width: 80px;
+ min-height: 80px; */
+ /* width: 80%;
+ height: 80%; */
+ /* width: 90px;
+ height: 90px; */
+ border-radius: 1rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 1.5rem;
+ padding: 1rem;
+ transition: transform 0.3s ease;
+
+ img {
+  width: 90px;
+  height: 90px;
+  max-height: 133px;
+  border-radius: 20%;
+ }
+}
+
+.skill-card:hover .skill-icon {
+ transform: scale(1.1);
+}
+
+.skill-name {
+ font-size: 2rem;
+ font-weight: 600;
+ text-align: center;
+ color: #374151;
+}
+
+.dark .skill-name {
+ color: #e5e7eb;
+}
+
+@keyframes fadeInUp {
+ from {
+  opacity: 0;
+  transform: translateY(30px);
+ }
+ to {
+  opacity: 1;
+  transform: translateY(0);
+ }
+}
+
+@media (max-width: 768px) {
+ .skills-section {
+  padding: 4rem 1rem;
+ }
+
+ .skills-title {
+  font-size: 2rem;
+ }
+
+ .skills-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+ }
+
+ .skill-card {
+  padding: 1.5rem;
+ }
+
+ .skill-icon {
+  width: 64px;
+  height: 64px;
+ }
+
+ .skill-icon svg {
+  width: 28px;
+  height: 28px;
+ }
+}
