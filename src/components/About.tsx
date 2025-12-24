@@ -25,11 +25,29 @@ const About = () => {
     </div>
     <div className="about-image">
      <div className="image-placeholder">
-      <img
-       src="./src/public/Me.png"
-       alt="portrait"
-       className="profile-image"
-      />
+      <picture>
+       <source
+        srcSet="./src/public/me/photo_mobile.avif"
+        media="(max-width: 500px)"
+        type="image/avif"
+       />
+       <source
+        srcSet="./src/public/me/photo_mobile.webp"
+        media="(max-width: 500px)"
+        type="image/webp"
+       />
+
+       <source
+        srcSet="./src/public/me/photo.webp"
+        type="image/webp"
+       />
+
+       <img
+        src="./src/public/me/photo.avif"
+        alt="portrait"
+        className="profile-image"
+       />
+      </picture>
      </div>
     </div>
    </div>
