@@ -1,6 +1,12 @@
 import { useAppSelector } from '../store/hooks';
 import { RootState } from '../store/store';
 import { translations } from '../constants/translations';
+
+import photoMobileAvif from '../../src/public/me/photo_mobile.avif';
+import photoMobileWebp from '../../src/public/me/photo_mobile.webp';
+import photoAvif from '../../src/public/me/photo.avif';
+import photoWebp from '../../src/public/me/photo.webp';
+
 import '../styles/About.css';
 
 const About = () => {
@@ -27,23 +33,23 @@ const About = () => {
      <div className="image-placeholder">
       <picture>
        <source
-        srcSet="./src/public/me/photo_mobile.avif"
+        srcSet={photoMobileAvif}
         media="(max-width: 500px)"
         type="image/avif"
        />
        <source
-        srcSet="./src/public/me/photo_mobile.webp"
+        srcSet={photoMobileWebp}
         media="(max-width: 500px)"
         type="image/webp"
        />
 
        <source
-        srcSet="./src/public/me/photo.webp"
+        srcSet={photoWebp}
         type="image/webp"
        />
 
        <img
-        src="./src/public/me/photo.avif"
+        src={photoAvif}
         alt="portrait"
         className="profile-image"
        />

@@ -1,9 +1,11 @@
 import { useAppSelector } from '../store/hooks';
 import { RootState } from '../store/store';
 import { translations } from '../constants/translations';
-
 import { ProjectCard } from './ProjectCard';
 import '../styles/Projects.css';
+import sneakerPrewiev from '../../src/public/projects-preview/sneakers.avif';
+import bookstorePrewiev from '../../src/public/projects-preview/bookstore.avif';
+import dfPrewiev from '../../src/public/projects-preview/df.avif';
 
 const Projects = () => {
  const language = useAppSelector((state: RootState) => state.language.current);
@@ -14,7 +16,7 @@ const Projects = () => {
    title: text.projects.bookstore.title,
    description: text.projects.bookstore.description,
    tags: ['React', 'Redux', 'Typescript', 'Axios', 'Scss'],
-   image: '../src/public/projects-preview/bookstore.avif',
+   image: bookstorePrewiev,
    github: 'https://github.com/rufrej/bookstore',
    demo: 'https://bookstore-roan-nine.vercel.app/',
   },
@@ -22,7 +24,7 @@ const Projects = () => {
    title: text.projects.sneakers.title,
    description: text.projects.sneakers.description,
    tags: ['Vue', 'Tailwind', 'Axios'],
-   image: '../src/public/projects-preview/sneakers.avif',
+   image: sneakerPrewiev,
    github: 'https://github.com/rufrej/vue-sneackers',
    demo: 'https://vue-sneackers.vercel.app/',
   },
@@ -30,7 +32,7 @@ const Projects = () => {
    title: text.projects.df.title,
    description: text.projects.df.description,
    tags: ['Javascript', 'HTML', 'CSS', 'Canvas'],
-   image: '../src/public/projects-preview/df.avif',
+   image: dfPrewiev,
    github: 'https://github.com/rufrej/defend_and_fight',
    demo: 'https://defend-and-fight.vercel.app/',
   },
