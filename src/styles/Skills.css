@@ -138,7 +138,7 @@
  }
 
  .skills-grid {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1.5rem;
  }
 
@@ -154,5 +154,20 @@
  .skill-icon svg {
   width: 28px;
   height: 28px;
+ }
+}
+@media (max-width: 776px) {
+ .skills-grid {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+ }
+
+ .skill-name {
+  font-size: 1rem;
+ }
+
+ .skill-icon {
+  width: 48px;
+  height: 52px;
  }
 }

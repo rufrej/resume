@@ -75,7 +75,7 @@ const Footer = () => {
 
     <div className="footer-bottom">
      <p className="footer-copyright">
-      © {currentYear} Your Name. All rights reserved.
+      © {currentYear} Ilya Ivanov. All rights reserved.
      </p>
     </div>
    </div>
