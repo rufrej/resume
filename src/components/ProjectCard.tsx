@@ -15,21 +15,21 @@ export function ProjectCard(props: IProjectProps) {
  return (
   <div
    key={props.title}
-   className="project-card"
+   className="project__card"
    style={{ animationDelay: `${props.index * 0.1}s` }}
   >
-   <div className="project-image-wrapper">
+   <div className="project__image-wrapper">
     <img
      src={props.image}
      alt={props.title}
-     className="project-image"
+     className="project__image"
     />
-    <div className="project-overlay">
+    <div className="project__overlay">
      <a
       href={props.github}
       target="_blank"
       rel="noopener noreferrer"
-      className="project-link"
+      className="project__link"
       aria-label="View on GitHub"
      >
       <Github size={24} />
@@ -38,21 +38,21 @@ export function ProjectCard(props: IProjectProps) {
       href={props.demo}
       target="_blank"
       rel="noopener noreferrer"
-      className="project-link"
+      className="project__link"
       aria-label="View live demo"
      >
       <ExternalLink size={24} />
      </a>
     </div>
    </div>
-   <div className="project-content">
-    <h3 className="project-title">{props.title}</h3>
-    <p className="project-description">{props.description}</p>
-    <div className="project-tags">
+   <div className="project__content">
+    <h3 className="project__title">{props.title}</h3>
+    <p className="project__description">{props.description}</p>
+    <div className="project__tags">
      {props.tags.map((tag) => (
       <span
        key={tag}
-       className="project-tag"
+       className="project__tag"
       >
        {tag}
       </span>

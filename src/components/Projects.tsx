@@ -6,8 +6,13 @@ import '../styles/Projects.css';
 import sneakerPrewiev from '../../src/public/projects-preview/sneakers.avif';
 import bookstorePrewiev from '../../src/public/projects-preview/bookstore.avif';
 import dfPrewiev from '../../src/public/projects-preview/df.avif';
+import { RefObject } from 'react';
 
-const Projects = () => {
+interface IProjectProps {
+ sectionRef: RefObject<HTMLElement>;
+}
+
+const Projects = ({ sectionRef }: IProjectProps) => {
  const language = useAppSelector((state: RootState) => state.language.current);
  const text = translations[language];
 
@@ -40,15 +45,15 @@ const Projects = () => {
 
  return (
   <section
-   id="projects"
-   className="projects-section"
+   ref={sectionRef}
+   className="projects__section"
   >
-   <div className="projects-container">
-    <h2 className="projects-title">My Projects</h2>
-    <p className="projects-subtitle">
+   <div className="projects__container">
+    <h2 className="projects__title">My Projects</h2>
+    <p className="projects__subtitle">
      A selection of my recent work and personal projects
     </p>
-    <div className="projects-grid">
+    <div className="projects__grid">
      {projects.map((project, index) => (
       <ProjectCard
        key={project.title}

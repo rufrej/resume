@@ -1,0 +1,108 @@
+.paralax {
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+}
+
+.paralax__container {
+ overflow-y: hidden;
+ position: relative;
+ height: 100%;
+}
+
+.paralax__bg {
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background-position: bottom;
+ background-size: cover;
+ transition: background 2s ease;
+}
+
+.sky {
+ width: 100%;
+ height: 100vh;
+ background-image: url(../src/public/backgrounds/desktop/sky.avif);
+}
+
+.dark .sky {
+ background-image: url(../src/public/backgrounds/desktop/sky_dark.avif);
+}
+
+.layer-4 {
+ z-index: 1;
+ background-image: url(../src/public/backgrounds/desktop/mountain-3.avif);
+}
+.dark .layer-4 {
+ z-index: 1;
+ background-image: url(../src/public/backgrounds/desktop/mountain-3_dark.avif);
+}
+.layer-3 {
+ z-index: 2;
+ background-image: url(../src/public/backgrounds/desktop/planets.avif);
+}
+
+.layer-2 {
+ z-index: 3;
+ background-image: url(../src/public/backgrounds/desktop/mountain-2.avif);
+}
+.dark .layer-2 {
+ z-index: 3;
+ background-image: url(../src/public/backgrounds/desktop/mountain-2_dark.avif);
+}
+.layer-1 {
+ z-index: 4;
+ background-image: url(../src/public/backgrounds/desktop/mountain-1.avif);
+}
+
+@media (max-width: 576px) {
+ .paralax__bg {
+  background-position: left;
+  animation: background-move 50s ease-in-out infinite;
+ }
+
+ .sky {
+  background-image: url(../src/public/backgrounds/mobile/sky.avif);
+ }
+
+ .dark .sky {
+  background-image: url(../src/public/backgrounds/mobile/sky_dark.avif);
+ }
+
+ .layer-4 {
+  background-image: url(../src/public/backgrounds/mobile/mountain-3.avif);
+ }
+ .dark .layer-4 {
+  background-image: url(../src/public/backgrounds/mobile/mountain-3_dark.avif);
+ }
+ .layer-3 {
+  background-image: url(../src/public/backgrounds/mobile/planets.avif);
+ }
+
+ .layer-2 {
+  background-image: url(../src/public/backgrounds/mobile/mountain-2.avif);
+ }
+ .dark .layer-2 {
+  background-image: url(../src/public/backgrounds/mobile/mountain-2_dark.avif);
+ }
+ .layer-1 {
+  background-image: url(../src/public/backgrounds/mobile/mountain-1.avif);
+ }
+}
+
+@keyframes background-move {
+ 0% {
+  background-position: left;
+ }
+
+ 50% {
+  background-position: right;
+ }
+ 100% {
+  background-position: left;
+ }
+}

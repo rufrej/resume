@@ -8,16 +8,23 @@ import photoAvif from '../../src/public/me/photo.avif';
 import photoWebp from '../../src/public/me/photo.webp';
 
 import '../styles/About.css';
+import ParallaxBackground from './parallaxBackground';
+import { RefObject } from 'react';
 
-const About = () => {
+interface IAboutProps {
+ sectionRef: RefObject<HTMLElement>;
+}
+
+const About = ({ sectionRef }: IAboutProps) => {
  const language = useAppSelector((state: RootState) => state.language.current);
  const text = translations[language];
 
  return (
   <section
-   id="about"
+   ref={sectionRef}
    className="about-section"
   >
+   <ParallaxBackground />
    <div className="about-container">
     <div className="about-content">
      <h1 className="about-title">

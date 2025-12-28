@@ -12,34 +12,34 @@ const Footer = () => {
 
  return (
   <footer className="footer">
-   <div className="footer-container">
-    <div className="footer-content">
-     <div className="footer-section">
-      <h3 className="footer-title">{text.footer.title}</h3>
-      <p className="footer-text">{text.footer.description}</p>
+   <div className="footer__container">
+    <div className="footer__content">
+     <div className="footer__section">
+      <h3 className="footer__title">{text.footer.title}</h3>
+      <p className="footer__text">{text.footer.description}</p>
      </div>
 
-     <div className="footer-section">
-      <h3 className="footer-title">Contact</h3>
-      <div className="footer-links">
+     <div className="footer__section">
+      <h3 className="footer__title">Contact</h3>
+      <div className="footer__links">
        <a
         href="mailto: rufrej@gmail.com"
-        className="footer-link"
+        className="footer__link"
        >
         rufrej@gmail.com
        </a>
        <a
         href="tel:+375 (29) 29-11-350"
-        className="footer-link"
+        className="footer__link"
        >
         +375 (29) 29-11-350
        </a>
       </div>
      </div>
 
-     <div className="footer-section">
-      <h3 className="footer-title">Follow Me</h3>
-      <div className="footer-socials">
+     <div className="footer__section">
+      <h3 className="footer__title">Follow Me</h3>
+      <div className="footer__socials">
        <a
         href="https://github.com/yourusername"
         target="_blank"
@@ -73,8 +73,8 @@ const Footer = () => {
      </div>
     </div>
 
-    <div className="footer-bottom">
-     <p className="footer-copyright">
+    <div className="footer__bottom">
+     <p className="footer__copyright">
       © {currentYear} Ilya Ivanov. All rights reserved.
      </p>
     </div>
