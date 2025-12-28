@@ -6,12 +6,10 @@
  padding: 6rem 2rem 4rem;
  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
  transition: background 0.5s ease;
- /* background-image: url('../public/mountain-1.png'); */
 }
 
 .dark .about-section {
  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
- /* background-image: url('../public/mountain-1.png'); */
 }
 
 .about-container {
@@ -29,6 +27,10 @@
  flex-direction: column;
  animation: fadeInUp 0.6s ease forwards;
  height: fit-content;
+ backdrop-filter: blur(10px);
+
+ border-radius: 1rem;
+ padding: 1rem;
 }
 
 .about-title {
