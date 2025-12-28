@@ -91,7 +91,7 @@ const Header = ({ scrollToSection }: HeaderProps) => {
        className="switch"
        aria-label="Toggle theme"
       >
-       {theme === 'light' ? <Moon size={25} /> : <Sun size={25} />}
+       {theme === 'light' ? <Sun size={25} /> : <Moon size={25} />}
       </button>
 
       <button

@@ -26,37 +26,37 @@
 .sky {
  width: 100%;
  height: 100vh;
- background-image: url('../src/public/backgrounds/desktop/sky.avif');
+ background-image: url('../../src/public/backgrounds/desktop/sky.avif');
 }
 
 .dark .sky {
- background-image: url('../src/public/backgrounds/desktop/sky_dark.avif');
+ background-image: url('../../src/public/backgrounds/desktop/sky_dark.avif');
 }
 
 .layer-4 {
  z-index: 1;
- background-image: url('../src/public/backgrounds/desktop/mountain-3.avif');
+ background-image: url('../../src/public/backgrounds/desktop/mountain-3.avif');
 }
 .dark .layer-4 {
  z-index: 1;
- background-image: url('../src/public/backgrounds/desktop/mountain-3_dark.avif');
+ background-image: url('../../src/public/backgrounds/desktop/mountain-3_dark.avif');
 }
 .layer-3 {
  z-index: 2;
- background-image: url('../src/public/backgrounds/desktop/planets.avif');
+ background-image: url('../../src/public/backgrounds/desktop/planets.avif');
 }
 
 .layer-2 {
  z-index: 3;
- background-image: url('../src/public/backgrounds/desktop/mountain-2.avif');
+ background-image: url('../../src/public/backgrounds/desktop/mountain-2.avif');
 }
 .dark .layer-2 {
  z-index: 3;
- background-image: url('../src/public/backgrounds/desktop/mountain-2_dark.avif');
+ background-image: url('../../src/public/backgrounds/desktop/mountain-2_dark.avif');
 }
 .layer-1 {
  z-index: 4;
- background-image: url('../src/public/backgrounds/desktop/mountain-1.avif');
+ background-image: url('../../src/public/backgrounds/desktop/mountain-1.avif');
 }
 
 @media (max-width: 576px) {
@@ -66,31 +66,31 @@
  }
 
  .sky {
-  background-image: url('../src/public/backgrounds/mobile/sky.avif');
+  background-image: url('../../src/public/backgrounds/mobile/sky.avif');
  }
 
  .dark .sky {
-  background-image: url('../src/public/backgrounds/mobile/sky_dark.avif');
+  background-image: url('../../src/public/backgrounds/mobile/sky_dark.avif');
  }
 
  .layer-4 {
-  background-image: url('../src/public/backgrounds/mobile/mountain-3.avif');
+  background-image: url('../../src/public/backgrounds/mobile/mountain-3.avif');
  }
  .dark .layer-4 {
-  background-image: url('../src/public/backgrounds/mobile/mountain-3_dark.avif');
+  background-image: url('../../src/public/backgrounds/mobile/mountain-3_dark.avif');
  }
  .layer-3 {
-  background-image: url('../src/public/backgrounds/mobile/planets.avif');
+  background-image: url('../../src/public/backgrounds/mobile/planets.avif');
  }
 
  .layer-2 {
-  background-image: url('../src/public/backgrounds/mobile/mountain-2.avif');
+  background-image: url('../../src/public/backgrounds/mobile/mountain-2.avif');
  }
  .dark .layer-2 {
-  background-image: url('../src/public/backgrounds/mobile/mountain-2_dark.avif');
+  background-image: url('../../src/public/backgrounds/mobile/mountain-2_dark.avif');
  }
  .layer-1 {
-  background-image: url('../src/public/backgrounds/mobile/mountain-1.avif');
+  background-image: url('../../src/public/backgrounds/mobile/mountain-1.avif');
  }
 }
 
