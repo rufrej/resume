@@ -16,6 +16,7 @@ import {
  X,
 } from 'lucide-react';
 import '../styles/Header.css';
+import { useTheme } from '../hooks/useTheme';
 
 interface HeaderProps {
  scrollToSection: (section: 'about' | 'skills' | 'projects') => void;
@@ -23,10 +24,11 @@ interface HeaderProps {
 
 const Header = ({ scrollToSection }: HeaderProps) => {
  const dispatch = useAppDispatch();
- const theme = useAppSelector((state) => state.theme.mode);
+ //  const theme = useAppSelector((state) => state.theme.mode);
  const [isMenuOpen, setMenuOpen] = useState(false);
  const language = useAppSelector((state: RootState) => state.language.current);
  const text = translations[language];
+ const { theme, setTheme } = useTheme();
 
  return (
   <header className="header">
@@ -87,7 +89,7 @@ const Header = ({ scrollToSection }: HeaderProps) => {
 
      <div className="header__switches">
       <button
-       onClick={() => dispatch(toggleTheme())}
+       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
        className="switch"
        aria-label="Toggle theme"
       >

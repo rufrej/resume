@@ -6,17 +6,34 @@ export const translations = {
    projects: 'Projects',
   },
   about: {
+   title: 'About Me',
    greeting: "Hi, I'm ",
    myName: 'ILYA',
+   descriptionBlock1:
+    'Frontend developer with 1 year of development experience. I love for creating beautiful, functional, and user-friendly applications.',
+   descriptionBlock2:
+    'Ready to work with large amounts of data, including in product and outsourced teams. He worked on the structure of Agile, including sprints.',
+   descriptionBlock3:
+    'I am in the process of raising the level of English to the next step (training with a repeater).',
+  },
+
+  skills: {
+   title: 'Skills & Tools',
+
    descriptionBlock1:
     'Frontend developer with 1 year experience in React application development. Architecture design, adaptive layout, animation, creating reusable components, working with forms, implementing authentication and authorization while maintaining a token. In the process of mastering Vue.',
    descriptionBlock2:
     'Ready to work with large amounts of data, including in product and outsourced teams. He worked on the structure of Agile, including sprints.',
    descriptionBlock3:
     'I am in the process of raising the level of English to the next step (training with a repeater).',
-  },
-  skills: {
-   title: 'My Skills',
+
+   point1: 'Architecture design',
+   point2: 'adaptive layout',
+   point3: 'creating reusable components',
+   point4: 'animation',
+   point5: 'working with forms',
+   point6:
+    'implementation of authentication and authorization with token preservation',
   },
   projects: {
    title: 'My Projects',
@@ -53,14 +70,33 @@ export const translations = {
    projects: 'Проекты',
   },
   about: {
+   title: 'Обо мне',
    greeting: 'Привет, меня зовут',
    myName: 'Илья',
    descriptionBlock1:
-    'Frontend разработчик с 1 годом опыта разработки приложений React. Проектирование архитектуры, адаптивная верстка, анимация, создание переиспользуемых компонентов, работа с формам, реализация аутентификации и авторизации с сохранением токена. В процессе освоения Vue.',
+    'Frontend разработчик с 1 годом опыта разработки. Люблю создавать красивые, функциональные и удобные приложения.',
    descriptionBlock2:
     'Готов работать с большими объёмами данных, в том числе в продуктовых и аутсорсных командах. Работал по структуре Agile, в том числе по спринтам.',
    descriptionBlock3:
     'Нахожусь в процессе повышения уровня английского языка до следующего по ступени (занятия с репетиром).',
+  },
+
+  skills: {
+   title: 'Навыки и инструменты',
+
+   descriptionBlock1:
+    'Frontend developer with 1 year experience in React application development. Architecture design, adaptive layout, animation, creating reusable components, working with forms, implementing authentication and authorization while maintaining a token. In the process of mastering Vue.',
+   descriptionBlock2:
+    'Ready to work with large amounts of data, including in product and outsourced teams. He worked on the structure of Agile, including sprints.',
+   descriptionBlock3:
+    'I am in the process of raising the level of English to the next step (training with a repeater).',
+
+   point1: 'Проектирование архитектуры',
+   point2: 'адаптивная верстка',
+   point3: 'создание переиспользуемых компонентов',
+   point4: 'анимация',
+   point5: ' работа с формам',
+   point6: 'реализация аутентификации и авторизации с сохранением токена',
   },
 
   projects: {

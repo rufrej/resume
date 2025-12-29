@@ -29,18 +29,11 @@
  background-image: url('../../src/public/backgrounds/desktop/sky.avif');
 }
 
-.dark .sky {
- background-image: url('../../src/public/backgrounds/desktop/sky_dark.avif');
-}
-
 .layer-4 {
  z-index: 1;
  background-image: url('../../src/public/backgrounds/desktop/mountain-3.avif');
 }
-.dark .layer-4 {
- z-index: 1;
- background-image: url('../../src/public/backgrounds/desktop/mountain-3_dark.avif');
-}
+
 .layer-3 {
  z-index: 2;
  background-image: url('../../src/public/backgrounds/desktop/planets.avif');
@@ -50,13 +43,26 @@
  z-index: 3;
  background-image: url('../../src/public/backgrounds/desktop/mountain-2.avif');
 }
-.dark .layer-2 {
- z-index: 3;
- background-image: url('../../src/public/backgrounds/desktop/mountain-2_dark.avif');
-}
+
 .layer-1 {
  z-index: 4;
  background-image: url('../../src/public/backgrounds/desktop/mountain-1.avif');
+}
+
+html[data-theme='dark'] {
+ .sky {
+  background-image: url('../../src/public/backgrounds/desktop/sky_dark.avif');
+ }
+
+ .layer-4 {
+  z-index: 1;
+  background-image: url('../../src/public/backgrounds/desktop/mountain-3_dark.avif');
+ }
+
+ .layer-2 {
+  z-index: 3;
+  background-image: url('../../src/public/backgrounds/desktop/mountain-2_dark.avif');
+ }
 }
 
 @media (max-width: 576px) {
@@ -67,18 +73,13 @@
 
  .sky {
   background-image: url('../../src/public/backgrounds/mobile/sky.avif');
- }
-
- .dark .sky {
-  background-image: url('../../src/public/backgrounds/mobile/sky_dark.avif');
+  height: 100%;
  }
 
  .layer-4 {
   background-image: url('../../src/public/backgrounds/mobile/mountain-3.avif');
  }
- .dark .layer-4 {
-  background-image: url('../../src/public/backgrounds/mobile/mountain-3_dark.avif');
- }
+
  .layer-3 {
   background-image: url('../../src/public/backgrounds/mobile/planets.avif');
  }
@@ -86,11 +87,25 @@
  .layer-2 {
   background-image: url('../../src/public/backgrounds/mobile/mountain-2.avif');
  }
- .dark .layer-2 {
-  background-image: url('../../src/public/backgrounds/mobile/mountain-2_dark.avif');
- }
+
  .layer-1 {
   background-image: url('../../src/public/backgrounds/mobile/mountain-1.avif');
+ }
+
+ html[data-theme='dark'] {
+  .sky {
+   background-image: url('../../src/public/backgrounds/mobile/sky_dark.avif');
+  }
+
+  .layer-4 {
+   z-index: 1;
+   background-image: url('../../src/public/backgrounds/mobile/mountain-3_dark.avif');
+  }
+
+  .layer-2 {
+   z-index: 3;
+   background-image: url('../../src/public/backgrounds/mobile/mountain-2_dark.avif');
+  }
  }
 }
 

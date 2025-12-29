@@ -1,15 +1,12 @@
 import { useAppSelector } from '../store/hooks';
 import { RootState } from '../store/store';
 import { translations } from '../constants/translations';
-
+import { RefObject } from 'react';
+import '../styles/About.css';
 import photoMobileAvif from '../../src/public/me/photo_mobile.avif';
 import photoMobileWebp from '../../src/public/me/photo_mobile.webp';
 import photoAvif from '../../src/public/me/photo.avif';
 import photoWebp from '../../src/public/me/photo.webp';
-
-import '../styles/About.css';
-import ParallaxBackground from './parallaxBackground';
-import { RefObject } from 'react';
 
 interface IAboutProps {
  sectionRef: RefObject<HTMLElement>;
@@ -24,7 +21,8 @@ const About = ({ sectionRef }: IAboutProps) => {
    ref={sectionRef}
    className="about-section"
   >
-   <ParallaxBackground />
+   {' '}
+   <h2 className="section-title">{text.about.title}</h2>
    <div className="about-container">
     <div className="about-content">
      <h1 className="about-title">
