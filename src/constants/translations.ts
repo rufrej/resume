@@ -28,12 +28,11 @@ export const translations = {
     'I am in the process of raising the level of English to the next step (training with a repeater).',
 
    point1: 'Architecture design',
-   point2: 'adaptive layout',
-   point3: 'creating reusable components',
-   point4: 'animation',
-   point5: 'working with forms',
-   point6:
-    'implementation of authentication and authorization with token preservation',
+   point2: 'Adaptive layout',
+   point3: 'Reusable components',
+   point4: 'Animation',
+   point5: 'Working with forms',
+   point6: 'Authentication & authorization',
   },
   projects: {
    title: 'My Projects',
@@ -92,11 +91,11 @@ export const translations = {
     'I am in the process of raising the level of English to the next step (training with a repeater).',
 
    point1: 'Проектирование архитектуры',
-   point2: 'адаптивная верстка',
-   point3: 'создание переиспользуемых компонентов',
-   point4: 'анимация',
-   point5: ' работа с формам',
-   point6: 'реализация аутентификации и авторизации с сохранением токена',
+   point2: 'Aдаптивная верстка',
+   point3: 'Переиспользуемыe компоненты',
+   point4: 'Анимация',
+   point5: 'Работа с формам',
+   point6: 'Аутентификация и авторизация',
   },
 
   projects: {
