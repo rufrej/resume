@@ -5,12 +5,12 @@
  min-height: 100vh;
  display: flex;
  align-items: center;
- padding: 6rem 2rem 4rem;
- background: var(--gradient-bg-primary);
+ /* padding: 6rem 2rem 4rem; */
+ background: var(--gradient-bg-third);
  transition: background 0.5s ease;
  display: flex;
  flex-direction: column;
- justify-content: space-evenly;
+ justify-content: space-between;
 }
 
 .about-container {
@@ -27,17 +27,20 @@
  display: flex;
  flex-direction: column;
  animation: fadeInUp 0.6s ease forwards;
- height: fit-content;
- backdrop-filter: blur(10px);
 
+ backdrop-filter: blur(10px);
+ height: max-content;
  border-radius: 1rem;
- padding: 1rem;
+ padding: 2rem;
+ margin-bottom: auto;
 }
 
 .section-title {
- font-size: 2.5rem;
+ font-family: 'Bebas Neue';
+ font-size: 5rem;
  font-weight: 700;
  text-align: center;
+ margin-top: 10rem;
  margin-bottom: 2rem;
  color: var(--color-primary);
  position: relative;
@@ -62,17 +65,19 @@
  -webkit-text-fill-color: transparent;
  background-clip: text;
 }
-
+/* 
 .about-subtitle {
  font-size: 1.5rem;
  font-weight: 500;
  color: var(--color-item-primary);
  margin-bottom: 2rem;
-}
+} */
 
 .about-text {
- font-size: 1.125rem;
- line-height: 1.8;
+ font-family: 'Trebuchet MS';
+ font-size: 1.4rem;
+ line-height: 1.4;
+ font-weight: 700;
  color: var(--color-primary);
  margin-bottom: 1.5rem;
 }
@@ -84,10 +89,10 @@
 .image-placeholder {
  position: relative;
  width: 100%;
- max-width: 400px;
+ max-width: 800px;
  aspect-ratio: 1;
- margin: 0 auto;
- border-radius: 2rem;
+ margin: 0 0 3rem 0;
+ border-radius: 50%;
  overflow: hidden;
 
  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -97,8 +102,6 @@
  content: '';
  position: absolute;
  inset: -2px;
- /* background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%); */
-
  border-radius: 2rem;
  backdrop-filter: blur(110px);
  z-index: -1;
@@ -109,6 +112,7 @@
  height: 100%;
  object-fit: cover;
  display: block;
+ transform: translateX(-50px);
 }
 
 @media (max-width: 1024px) {
@@ -117,9 +121,9 @@
   gap: 3rem;
  }
 
- .about-content,
  .about-image {
   transform: translateY(30px);
+  margin: auto;
  }
 
  .about-content.visible,
@@ -148,6 +152,7 @@
   flex-direction: column-reverse;
  }
  .section-title {
+  font-size: 3rem;
   margin: 1rem;
  }
 

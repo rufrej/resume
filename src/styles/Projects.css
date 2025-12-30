@@ -1,12 +1,10 @@
+@import 'variables.css';
+
 .projects__section {
  min-height: 100vh;
  padding: 6rem 2rem;
- background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+ background: var(--gradient-bg-primary);
  transition: background 0.3s ease;
-}
-
-.dark .projects__section {
- background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
 }
 
 .projects__container {
@@ -18,23 +16,18 @@
  font-size: 2.5rem;
  font-weight: 700;
  text-align: center;
- color: #111827;
+ color: var(--color-primary);
  margin-bottom: 1rem;
 }
 
-.dark .projects__title {
- color: #f9fafb;
-}
-
 .projects__subtitle {
- font-size: 1.125rem;
+ font-family: 'Trebuchet MS';
+ font-size: 1.4rem;
+ line-height: 1.4;
+ font-weight: 700;
  text-align: center;
- color: #6b7280;
+ color: var(--color-primary);
  margin-bottom: 4rem;
-}
-
-.dark .projects__subtitle {
- color: #9ca3af;
 }
 
 .projects__grid {
@@ -44,18 +37,13 @@
 }
 
 .project__card {
- background-color: #ffffff;
+ background: var(--gradient-bg-primary);
  border-radius: 1rem;
  overflow: hidden;
  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
  transition: all 0.3s ease;
  opacity: 0;
  animation: fadeInUp 0.6s ease forwards;
-}
-
-.dark .project__card {
- background-color: #1f2937;
- box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .project__card:hover {
@@ -115,7 +103,7 @@
 
 .project__link:hover {
  background-color: #3b82f6;
- color: #ffffff;
+ color: var(--color-primary);
  transform: scale(1.1);
 }
 
@@ -126,18 +114,14 @@
 .project__title {
  font-size: 1.5rem;
  font-weight: 600;
- color: #111827;
+ color: var(--color-primary);
  margin-bottom: 0.75rem;
-}
-
-.dark .project__title {
- color: #f9fafb;
 }
 
 .project__description {
  font-size: 0.9375rem;
  line-height: 1.6;
- color: #6b7280;
+ color: var(--color-primary);
  margin-bottom: 1rem;
 }
 

@@ -1,19 +1,40 @@
 html[data-theme='dark'] {
  --color-primary: #d1d5db;
+ --color-secondary: #d9e3bf;
  --color-border-primary: rgba(255, 255, 255, 0.1);
  --color-item-primary: #3b82f6;
  --color-hover-bg-primary: rgba(59, 130, 246, 0.1);
  --color-bg-primary: rgba(17, 24, 39, 0.8);
  --gradient-item-primary: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+ --gradient-item-secondary: linear-gradient(
+  rgba(63, 94, 251, 1) 0%,
+  rgba(252, 70, 107, 1) 100%
+ );
  --gradient-bg-primary: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+ --gradient-bg-secondary: linear-gradient(180deg, #054c76, #0c192a, #471c3a);
+ --gradient-bg-third: linear-gradient(0deg, #1f2c51, #1f2c51, #020514);
 }
 
 html[data-theme='light'] {
  --color-primary: #0d120e;
+ --color-secondary: #d9e3bf;
  --color-border-primary: rgba(0, 0, 0, 0.1);
  --color-item-primary: #3b82f6;
  --color-hover-bg-primary: rgba(59, 130, 246, 0.1);
  --color-bg-primary: rgba(255, 255, 255, 0.8);
  --gradient-item-primary: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+ --gradient-item-secondary: linear-gradient(
+  rgba(63, 94, 251, 1) 0%,
+  rgb(212, 50, 148) 100%
+ );
  --gradient-bg-primary: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+ --gradient-bg-secondary: linear-gradient(180deg, #7b9fe8, #e092b3, #e0dba6);
+ --gradient-bg-third: linear-gradient(
+  180deg,
+  #030b1c,
+  #3d85a9,
+  #63cac8,
+  #b8edff
+ );
 }

@@ -62,6 +62,7 @@ export const translations = {
 
   //////////
  },
+
  ru: {
   header: {
    about: 'Обо мне',

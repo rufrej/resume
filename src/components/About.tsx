@@ -3,10 +3,10 @@ import { RootState } from '../store/store';
 import { translations } from '../constants/translations';
 import { RefObject } from 'react';
 import '../styles/About.css';
-import photoMobileAvif from '../../src/public/me/photo_mobile.avif';
-import photoMobileWebp from '../../src/public/me/photo_mobile.webp';
-import photoAvif from '../../src/public/me/photo.avif';
-import photoWebp from '../../src/public/me/photo.webp';
+import photoMobileAvif from '../../src/public/me/photo2_mobile.avif';
+import photoMobileWebp from '../../src/public/me/photo2_mobile.webp';
+import photoAvif from '../../src/public/me/photo2.avif';
+import photoWebp from '../../src/public/me/photo2.webp';
 
 interface IAboutProps {
  sectionRef: RefObject<HTMLElement>;
@@ -29,7 +29,7 @@ const About = ({ sectionRef }: IAboutProps) => {
       {text.about.greeting}
       <span className="highlight"> {text.about.myName}</span>
      </h1>
-     <h2 className="about-subtitle">Frontend Developer</h2>
+     {/* <h2 className="about-subtitle">Frontend Developer</h2> */}
      <p className="about-text">{text.about.descriptionBlock1}</p>
      <p className="about-text">{text.about.descriptionBlock2}</p>
      <p className="about-text">{text.about.descriptionBlock3}</p>

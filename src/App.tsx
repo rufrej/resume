@@ -4,6 +4,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import { useRef } from 'react';
+import { Intro } from './components/Intro';
 
 function App() {
  const aboutRef = useRef<HTMLElement>(null);
@@ -27,6 +28,7 @@ function App() {
   <>
    <Header scrollToSection={scrollToSection} />
    <main>
+    <Intro />
     <About sectionRef={aboutRef} />
     <Skills sectionRef={skillsRef} />
     <Projects sectionRef={projectRef} />

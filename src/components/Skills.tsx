@@ -73,12 +73,13 @@ const Skills = ({ sectionRef }: ISkillsProps) => {
    ref={sectionRef}
    className="skills__section"
   >
+   {' '}
+   <h2 className="skills__title">Skills & Tools</h2>
    <div className="skills__container">
-    <h2 className="skills__title">Skills & Tools</h2>
-
     <div className="skills__description">
      <div className="skills__text">
       <h3 className="skills__subtitle">My Technical Arsenal</h3>
+
       <p>
        I work with a diverse set of technologies and frameworks to build robust,
        scalable applications. From frontend to backend, I enjoy every aspect of
@@ -115,47 +116,46 @@ const Skills = ({ sectionRef }: ISkillsProps) => {
       <div className="skills__point">
        <div>
         {' '}
-        <Server color="lightblue" />
+        <Server color="aqua" />
        </div>
        <p>{text.skills.point5}</p>
       </div>
       <div className="skills__point">
        <div>
-        <KeyRound color="aqua" />
+        <KeyRound color="purple" />
        </div>
        <p>{text.skills.point6}</p>
       </div>
      </div>
     </div>
-   </div>
 
-   <div className="skills__orbit-container">
-    <ParallaxBackground />
-    <div className="orbit-center">
-     <div className="center-circle">
-      <Code2 size={48} />
-     </div>
-    </div>
-    <div className="orbit-ring"></div>
-    <div className="orbit-items">
-     {skills.map((skill, index) => (
-      <div
-       key={skill.name}
-       className="orbit-item"
-       style={{
-        animation: `orbit-${index} 20s linear infinite`,
-       }}
-      >
-       <div className="skill-icon">
-        <img
-         src={skill.icon}
-         alt={skill.name}
-        />
-
-        <span className="skill-name">{skill.name}</span>
-       </div>
+    <div className="skills__orbit-container">
+     <div className="orbit-center">
+      <div className="center-circle">
+       <Code2 size={48} />
       </div>
-     ))}
+     </div>
+     <div className="orbit-ring"></div>
+     <div className="orbit-items">
+      {skills.map((skill, index) => (
+       <div
+        key={skill.name}
+        style={{
+         animation: `orbit-${index} 20s linear infinite`,
+        }}
+        className="orbit-item"
+       >
+        <div className="skill-icon">
+         <img
+          src={skill.icon}
+          alt={skill.name}
+         />
+
+         <span className="skill-name">{skill.name}</span>
+        </div>
+       </div>
+      ))}
+     </div>
     </div>
    </div>
   </section>
