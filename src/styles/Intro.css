@@ -66,20 +66,21 @@
   min-height: 50vh;
   width: 100%;
   gap: 5rem;
+  margin-top: 4rem;
  }
  .intro__highlight {
-  font-size: 48px;
+  font-size: 4rem;
  }
 
  .intro__image-placeholder {
-  width: 50%;
+  width: 70%;
  }
 
  .intro__title {
-  font-size: 1rem;
+  font-size: 1.3rem;
  }
 
  .intro__highlight {
-  font-size: 2rem;
+  font-size: 2.4rem;
  }
 }
