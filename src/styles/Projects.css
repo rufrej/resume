@@ -3,7 +3,7 @@
 .projects__section {
  min-height: 100vh;
  padding: 6rem 2rem;
- background: var(--gradient-bg-primary);
+ background: var(--gradient-bg-third);
  transition: background 0.3s ease;
 }
 
@@ -13,7 +13,8 @@
 }
 
 .projects__title {
- font-size: 2.5rem;
+ font-family: 'Bebas Neue';
+ font-size: 4rem;
  font-weight: 700;
  text-align: center;
  color: var(--color-primary);
@@ -37,7 +38,7 @@
 }
 
 .project__card {
- background: var(--gradient-bg-primary);
+ background: var(--gradient-bg-secondary);
  border-radius: 1rem;
  overflow: hidden;
  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -166,7 +167,7 @@
  }
 
  .projects__title {
-  font-size: 2rem;
+  font-size: 3rem;
  }
 
  .projects__grid {

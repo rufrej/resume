@@ -1,6 +1,5 @@
 import { useAppDispatch, useAppSelector } from '../store/hooks';
 import { useState } from 'react';
-import { toggleTheme } from '../store/themeSlice';
 import { toggleLanguage } from '../store/languageSlice';
 import { translations } from '../constants/translations';
 import { RootState } from '../store/store';
@@ -17,6 +16,8 @@ import {
 } from 'lucide-react';
 import '../styles/Header.css';
 import { useTheme } from '../hooks/useTheme';
+import Footer from './Footer';
+import Contacts from './Contacts';
 
 interface HeaderProps {
  scrollToSection: (section: 'about' | 'skills' | 'projects') => void;
@@ -24,7 +25,6 @@ interface HeaderProps {
 
 const Header = ({ scrollToSection }: HeaderProps) => {
  const dispatch = useAppDispatch();
- //  const theme = useAppSelector((state) => state.theme.mode);
  const [isMenuOpen, setMenuOpen] = useState(false);
  const language = useAppSelector((state: RootState) => state.language.current);
  const text = translations[language];
@@ -62,7 +62,7 @@ const Header = ({ scrollToSection }: HeaderProps) => {
        href="https://t.me/rufrej"
        target="_blank"
        rel="noopener noreferrer"
-       className="icon-link"
+       className="link__icon"
        aria-label="GitHub"
       >
        <Send size={20} />
@@ -71,7 +71,7 @@ const Header = ({ scrollToSection }: HeaderProps) => {
        href="https://github.com/rufrej"
        target="_blank"
        rel="noopener noreferrer"
-       className="icon-link"
+       className="link__icon"
        aria-label="GitHub"
       >
        <Github size={20} />
@@ -80,11 +80,14 @@ const Header = ({ scrollToSection }: HeaderProps) => {
        href="https://www.linkedin.com/in/илья-иванов-7747132a2"
        target="_blank"
        rel="noopener noreferrer"
-       className="icon-link"
+       className="link__icon"
        aria-label="LinkedIn"
       >
        <Linkedin size={20} />
       </a>
+      <div className="header__menu__contacts">
+       <Contacts />
+      </div>
      </div>
 
      <div className="header__switches">

@@ -20,12 +20,10 @@ export const translations = {
   skills: {
    title: 'Skills & Tools',
 
-   descriptionBlock1:
-    'Frontend developer with 1 year experience in React application development. Architecture design, adaptive layout, animation, creating reusable components, working with forms, implementing authentication and authorization while maintaining a token. In the process of mastering Vue.',
-   descriptionBlock2:
-    'Ready to work with large amounts of data, including in product and outsourced teams. He worked on the structure of Agile, including sprints.',
-   descriptionBlock3:
-    'I am in the process of raising the level of English to the next step (training with a repeater).',
+   subtitle: 'My Technical Arsenal',
+
+   description:
+    'I work with a diverse set of technologies and frameworks to build robust, scalable applications. I enjoy every aspect of the development process and continuously expand my knowledge to stay current with industry trends',
 
    point1: 'Architecture design',
    point2: 'Adaptive layout',
@@ -84,12 +82,10 @@ export const translations = {
   skills: {
    title: 'Навыки и инструменты',
 
-   descriptionBlock1:
-    'Frontend developer with 1 year experience in React application development. Architecture design, adaptive layout, animation, creating reusable components, working with forms, implementing authentication and authorization while maintaining a token. In the process of mastering Vue.',
-   descriptionBlock2:
-    'Ready to work with large amounts of data, including in product and outsourced teams. He worked on the structure of Agile, including sprints.',
-   descriptionBlock3:
-    'I am in the process of raising the level of English to the next step (training with a repeater).',
+   subtitle: 'Мой технический арсенал',
+
+   description:
+    'Я работаю с разнообразным набором технологий и фреймворков для создания надежных, масштабируемых приложений. Я наслаждаюсь каждым аспектом процесса разработки и постоянно расширяю свои знания, чтобы быть в курсе тенденций отрасли',
 
    point1: 'Проектирование архитектуры',
    point2: 'Aдаптивная верстка',

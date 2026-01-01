@@ -33,8 +33,7 @@
  gap: 3rem;
  color: var(--color-primary);
  font-size: 1rem;
- align-items: flex-start;
- margin-bottom: auto;
+ margin: auto;
  padding: 2rem;
  width: 100%;
 }
@@ -64,6 +63,7 @@
  }
 }
 .skills__point {
+ font-family: 'Bebas Neue';
  position: relative;
  display: flex;
  align-items: center;
@@ -72,14 +72,20 @@
  padding: 0.8rem;
  border-radius: 10px;
  gap: 1rem;
- font-size: 1rem;
+ font-size: 1.2rem;
  font-weight: 500;
- background: var(--gradient-bg-primary);
+ background: var(--color-bg-primary);
  svg {
   width: 42px;
   height: 42px;
   z-index: 1;
  }
+}
+
+.skills__point div {
+ border-radius: 10px;
+ padding: 0.18rem;
+ display: flex;
 }
 
 .skills__orbit-container {
@@ -131,7 +137,6 @@
  width: 0;
  height: 0;
  z-index: 7;
- /* animation-play-state: paused; */
 }
 
 .orbit-item {
@@ -218,18 +223,9 @@
  .skills__points {
   margin: auto;
  }
-
- .skills__description {
-  margin: 2rem;
- }
 }
 
 @media (max-width: 768px) {
- /* .skills__grid {
-  grid-template-columns: 1fr;
-  gap: 3rem;
- } */
-
  .skills__orbit-container {
   height: 450px;
  }
@@ -245,11 +241,11 @@
 }
 @media (max-width: 640px) {
  .skills__section {
-  padding: 1rem;
+  padding: 0;
  }
 
  .skills__description {
-  margin: 0;
+  margin: auto;
   padding: 1rem;
   max-width: 450px;
  }
@@ -272,6 +268,12 @@
  }
  .skills__point {
   padding: 0.3rem;
+  font-size: 0.8rem;
+  svg {
+   width: 32px;
+   height: 32px;
+   z-index: 1;
+  }
  }
 
  .skills__orbit-container {
@@ -282,19 +284,4 @@
   margin-bottom: 5rem;
   transform: scale(-70%) rotate(180deg);
  }
- /* 
- .center-circle {
-  width: 80px;
-  height: 80px;
- }
-
- .skill-icon {
-  width: 60px;
-  height: 60px;
- }
-
- .skill-icon svg {
-  width: 24px;
-  height: 24px;
- } */
 }

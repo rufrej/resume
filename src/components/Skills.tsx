@@ -5,10 +5,7 @@ import { useAppSelector } from '../store/hooks';
 import { RootState } from '../store/store';
 import { translations } from '../constants/translations';
 import { Code2 } from 'lucide-react';
-import ParallaxBackground from './parallaxBackground';
 import {
- Code,
- Database,
  Layout,
  Puzzle,
  Server,
@@ -74,54 +71,47 @@ const Skills = ({ sectionRef }: ISkillsProps) => {
    className="skills__section"
   >
    {' '}
-   <h2 className="skills__title">Skills & Tools</h2>
+   <h2 className="skills__title">{text.skills.title}</h2>
    <div className="skills__container">
     <div className="skills__description">
      <div className="skills__text">
-      <h3 className="skills__subtitle">My Technical Arsenal</h3>
+      <h3 className="skills__subtitle">{text.skills.subtitle}</h3>
 
-      <p>
-       I work with a diverse set of technologies and frameworks to build robust,
-       scalable applications. From frontend to backend, I enjoy every aspect of
-       the development process and continuously expand my knowledge to stay
-       current with industry trends
-      </p>
+      <p>{text.skills.description}</p>
      </div>
      <div className="skills__points">
       <div className="skills__point">
-       <div>
+       <div style={{ backgroundColor: '#ffbebc' }}>
         <Layout color="red" />
        </div>
        <p>{text.skills.point1}</p>
       </div>
       <div className="skills__point">
-       <div>
+       <div style={{ backgroundColor: '#fff5ba' }}>
         <Smartphone color="orange" />
        </div>
        <p>{text.skills.point2}</p>
       </div>
       <div className="skills__point">
-       <div>
-        {' '}
+       <div style={{ backgroundColor: '#ffffd1' }}>
         <Puzzle color="gold" />
        </div>
        <p>{text.skills.point3}</p>
       </div>
       <div className="skills__point">
-       <div>
+       <div style={{ backgroundColor: '#bffcc6' }}>
         <Zap color="green" />
        </div>
        <p>{text.skills.point4}</p>
       </div>
       <div className="skills__point">
-       <div>
-        {' '}
+       <div style={{ backgroundColor: '#c4f4f8' }}>
         <Server color="aqua" />
        </div>
        <p>{text.skills.point5}</p>
       </div>
       <div className="skills__point">
-       <div>
+       <div style={{ backgroundColor: '#b5b9ff' }}>
         <KeyRound color="purple" />
        </div>
        <p>{text.skills.point6}</p>
