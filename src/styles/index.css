@@ -1,3 +1,17 @@
+@font-face {
+ font-family: 'Bebas Neue';
+ src: url(../fonts/Bebas_Neue_Cyrillic/bebasneuecyrillic.ttf);
+}
+
+@font-face {
+ font-family: 'Raleway';
+ src: url(../fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+ font-family: 'Jaro';
+ src: url(../fonts/Jaro/Jaro-Regular-VariableFont_opsz.ttf);
+}
+
 * {
  margin: 0;
  padding: 0;
@@ -16,9 +30,4 @@ body {
  -moz-osx-font-smoothing: grayscale;
  transition: background-color 0.3s ease, color 0.3s ease;
  background: var(--color-bg-primary);
-}
-
-@font-face {
- font-family: 'Bebas Neue';
- src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }

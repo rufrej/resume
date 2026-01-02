@@ -34,7 +34,7 @@ export const translations = {
   },
   projects: {
    title: 'My Projects',
-
+   subtitle: 'A selection of my recent work and personal projects',
    bookstore: {
     title: 'Bookstore',
     description:
@@ -52,10 +52,12 @@ export const translations = {
      'Native Javascript game, using Canvas and without using any libraries. ',
    },
   },
-  footer: {
+
+  contacts: {
    title: 'Get In Touch',
    description:
     'Feel free to reach out to me for any opportunities or collaborations.',
+   contacts: 'Сontacts',
   },
 
   //////////
@@ -97,7 +99,7 @@ export const translations = {
 
   projects: {
    title: 'Мои проекты',
-
+   subtitle: 'Подборка моих последних работ и личных проектов',
    bookstore: {
     title: 'Книжный магазин',
     description:
@@ -114,10 +116,11 @@ export const translations = {
      'Игра на  нативном Javascript, с использованием Canvas и без использования каких либо библиотек.',
    },
   },
-  footer: {
+  contacts: {
    title: 'Свяжитесь со мной',
    description:
     'Не стесняйтесь связаться со мной по любым вопросам или для сотрудничества.',
+   contacts: 'Контакты',
   },
  },
 };

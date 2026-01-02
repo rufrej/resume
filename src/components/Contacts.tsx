@@ -11,12 +11,12 @@ const Contacts = () => {
  return (
   <div className="contacts__content">
    <div className="contacts__section">
-    <h3 className="contacts__title">{text.footer.title}</h3>
-    <p className="contacts__text">{text.footer.description}</p>
+    <h3 className="contacts__title">{text.contacts.title}</h3>
+    <p className="contacts__text">{text.contacts.description}</p>
    </div>
 
    <div className="contacts__section">
-    <h3 className="contacts__title">Contact</h3>
+    <h3 className="contacts__title">{text.contacts.contacts}</h3>
     <div className="contacts__links">
      <a
       href="mailto: rufrej@gmail.com"

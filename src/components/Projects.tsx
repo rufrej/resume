@@ -49,10 +49,8 @@ const Projects = ({ sectionRef }: IProjectProps) => {
    className="projects__section"
   >
    <div className="projects__container">
-    <h2 className="projects__title">My Projects</h2>
-    <p className="projects__subtitle">
-     A selection of my recent work and personal projects
-    </p>
+    <h2 className="projects__title">{text.projects.title}</h2>
+    <p className="projects__subtitle">{text.projects.subtitle}</p>
     <div className="projects__grid">
      {projects.map((project, index) => (
       <ProjectCard
