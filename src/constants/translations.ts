@@ -10,11 +10,11 @@ export const translations = {
    greeting: "Hi, I'm ",
    myName: 'ILYA',
    descriptionBlock1:
-    'Frontend developer with 1 year of development experience. I love for creating beautiful, functional, and user-friendly applications.',
+    'Frontend developer with 1 year of development experience. I am fond of creating beautiful, functional and user-friendly applications.',
    descriptionBlock2:
-    'Ready to work with large amounts of data, including in product and outsourced teams. He worked on the structure of Agile, including sprints.',
+    'I am ready to work with large amount of data including work in product and outsourced teams.I have experience in dealing with the Agile structure including sprints.',
    descriptionBlock3:
-    'I am in the process of raising the level of English to the next step (training with a repeater).',
+    'I am in the process of upgrading my level of English to the highest grade learning with a tutor',
   },
 
   skills: {
@@ -23,7 +23,7 @@ export const translations = {
    subtitle: 'My Technical Arsenal',
 
    description:
-    'I work with a diverse set of technologies and frameworks to build robust, scalable applications. I enjoy every aspect of the development process and continuously expand my knowledge to stay current with industry trends',
+    'I work with a diverse set of technologies and frameworks to build robust, scalable applications. I enjoy every aspect of the development process and continuously expand my knowledge to keep up with industry trends',
 
    point1: 'Architecture design',
    point2: 'Adaptive layout',
@@ -34,7 +34,7 @@ export const translations = {
   },
   projects: {
    title: 'My Projects',
-   subtitle: 'A selection of my recent work and personal projects',
+   subtitle: 'A collection of my recent works and personal projects',
    bookstore: {
     title: 'Bookstore',
     description:
@@ -49,14 +49,14 @@ export const translations = {
    df: {
     title: 'Defend and Fight',
     description:
-     'Native Javascript game, using Canvas and without using any libraries. ',
+     'Native Javascript game using Canvas and without adding any libraries.',
    },
   },
 
   contacts: {
    title: 'Get In Touch',
    description:
-    'Feel free to reach out to me for any opportunities or collaborations.',
+    'Feel free to contact me for any available opportunities or cooperations.',
    contacts: 'Сontacts',
   },
 
@@ -111,7 +111,7 @@ export const translations = {
      'Интернет-магазин кроссовок с адаптивной версткой корзиной, избранным, поиском и сортировкой.',
    },
    df: {
-    title: 'защита и борьба',
+    title: 'Защита и Борьба',
     description:
      'Игра на  нативном Javascript, с использованием Canvas и без использования каких либо библиотек.',
    },

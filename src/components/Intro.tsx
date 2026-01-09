@@ -9,11 +9,9 @@ export const Intro = () => {
  return (
   <section className="intro__section">
    <ParallaxBackground />
-   <div className="intro text">
-    <h1 className="intro__title">
-     I'm
-     <br /> <span className="intro__highlight">Frontend Developer</span>
-    </h1>
+   <div className="intro__text">
+    <h2 className="intro__title">I'm</h2>
+    <h2 className="intro__highlight">Frontend Developer</h2>
    </div>
    <div className="intro__image-wrappper">
     <div className="intro__image-placeholder">
