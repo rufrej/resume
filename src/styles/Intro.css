@@ -42,7 +42,7 @@
 }
 
 .intro__image-wrappper {
- z-index: 2;
+ z-index: 5;
  animation: fadeInUp 2s ease forwards;
  pointer-events: none;
 }
