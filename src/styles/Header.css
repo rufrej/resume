@@ -146,7 +146,8 @@
  }
 
  .header__nav {
-  gap: 1rem;
+  margin-left: 0;
+  gap: 0.5rem;
  }
 
  .nav-link {
@@ -178,12 +179,16 @@
  .header__links {
   margin-top: 70%;
   padding: 1rem;
+  display: flex;
  }
 
  .header__switches {
   margin-top: 1rem;
   margin-right: auto;
   margin-left: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
  }
 
  .header__menu.active {
